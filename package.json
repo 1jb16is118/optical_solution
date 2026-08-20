@@ -1,9 +1,12 @@
 {
+  "homepage": "https://1jb16is118.github.io/optical_solution",
   "name": "optical-consulting-website",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+     "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite",
     "preview": "vite preview"
