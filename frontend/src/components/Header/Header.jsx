@@ -35,7 +35,7 @@ function Header() {
 
           <span className="brand-content">
             <strong>
-              OPTI<span>VISION</span>
+              SSOPTITECH<span>SOLUTION</span>
             </strong>
             <small>OPTICAL CONSULTING</small>
           </span>
