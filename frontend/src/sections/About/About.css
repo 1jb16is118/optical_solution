@@ -1,0 +1,166 @@
+.about {
+  padding: 110px 0;
+  background: var(--color-surface);
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+
+  align-items: center;
+}
+
+.about-content {
+  max-width: 580px;
+}
+
+.about-description {
+  margin-top: 25px;
+
+  color: var(--color-text-muted);
+
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.about-description + .about-description {
+  margin-top: 15px;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 40px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.about-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-stat strong {
+  color: var(--color-secondary);
+
+  font-size: 28px;
+}
+
+.about-stat span {
+  margin-top: 5px;
+
+  color: var(--color-text-muted);
+
+  font-size: 12px;
+}
+
+/* Visual */
+
+.about-visual {
+  min-height: 460px;
+
+  position: relative;
+
+  border-radius: var(--radius-lg);
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eaf4ff,
+      #f8fbff
+    );
+
+  border: 1px solid var(--color-border);
+}
+
+.about-lens-large {
+  position: absolute;
+
+  width: 260px;
+  height: 260px;
+
+  border-radius: 50%;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      white,
+      rgba(0, 184, 217, 0.2),
+      rgba(20, 99, 255, 0.08)
+    );
+
+  border: 18px solid
+    rgba(20, 99, 255, 0.15);
+
+  box-shadow:
+    0 25px 60px rgba(20, 99, 255, 0.2);
+}
+
+.about-lens-small {
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+
+  top: 45px;
+  right: 45px;
+
+  border: 10px solid
+    rgba(0, 184, 217, 0.3);
+
+  background:
+    rgba(255, 255, 255, 0.4);
+}
+
+.about-label {
+  position: absolute;
+
+  bottom: 35px;
+  left: 35px;
+
+  color: var(--color-primary);
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+@media (max-width: 850px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 80px 0;
+  }
+
+  .about-stats {
+    gap: 15px;
+  }
+
+  .about-visual {
+    min-height: 350px;
+  }
+
+  .about-lens-large {
+    width: 210px;
+    height: 210px;
+  }
+}
