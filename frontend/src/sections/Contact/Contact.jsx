@@ -61,12 +61,12 @@ function Contact() {
           <div className="contact-details">
             <div className="contact-detail">
               <span>EMAIL</span>
-              <strong>hello@optivision.com</strong>
+              <strong>shashank@ssoptitechsolutions.com</strong>
             </div>
 
             <div className="contact-detail">
-              <span>PHONE</span>
-              <strong>+91 98765 43210</strong>
+              <span>MOBILE</span>
+              <strong>+91 7860193863</strong>
             </div>
 
             <div className="contact-detail">
